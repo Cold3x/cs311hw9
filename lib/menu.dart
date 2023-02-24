@@ -70,7 +70,10 @@ class VideoCard extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => VideoScreen(videoPath: videoPath),
+          builder: (context) => VideoScreen(
+            videoPath: videoPath,
+            title: title,
+          ),
         ));
       },
       child: Card(
